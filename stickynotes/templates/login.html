@@ -1,0 +1,20 @@
+{% extends "sticky.html" %}
+{% block content %}
+<title>Login</title>
+<h2 style="text-align: center;">Login</h2>
+<div class="container">
+    <form action="http://localhost:5000/login" method="POST" style="width: 500px; margin:auto">
+        <div class="form-group">
+            <lable for="email">Email:</lable>
+            <input type="email" class="form-control" name="email" required>
+
+            <lable for="password">Password:</lable>
+            <input type="password" class="form-control" name="password" required>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Login</button>
+            </div>
+        </div>
+</div>
+</form>
+{% endblock %}

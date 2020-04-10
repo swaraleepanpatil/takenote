@@ -1,0 +1,17 @@
+{% extends "sticky.html" %}
+{% block content %}
+<title>Notes</title>
+<h2 style="text-align: center;">Notes</h2>
+<div class="container">
+    <form action = "http://localhost:5000/notes" method = "POST" style="width: 500px; margin:auto">
+        <div class="form-group">
+            <lable for="notes_content">Write Your Thoughts:</lable>
+            <input type="text" class="form-control" name="notes_content" required>
+            <div class="form-group">
+            <button type="submit" class="btn btn-success">Save Note
+            </button>
+        </div>
+    </div>
+    </form>  
+</div>     
+{% endblock %}
